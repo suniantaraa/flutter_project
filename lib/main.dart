@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dashboard.dart';
+
 void main() => runApp(MaterialApp(home: Home()));
 
 class Home extends StatefulWidget {
@@ -25,12 +26,11 @@ class HomeState extends State<Home> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      "Dashboard",
-                      style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 21,
-                              fontWeight: FontWeight.bold)),
+                    Text("Dashboard",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 21,
+                            fontWeight: FontWeight.bold)),
                     SizedBox(
                       height: 4,
                     ),
@@ -42,7 +42,7 @@ class HomeState extends State<Home> {
           SizedBox(
             height: 40,
           ),
-         GridDashboard()
+          GridDashboard()
         ],
       ),
     );
